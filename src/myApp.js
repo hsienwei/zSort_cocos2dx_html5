@@ -51,7 +51,7 @@ var MyLayer = cc.Layer.extend({
     },
 
     onMouseUp:function (event) {
-        var xScale  = cc.EGLView.getInstance().getScaleX();
+        /*var xScale  = cc.EGLView.getInstance().getScaleX();
         var yScale = cc.EGLView.getInstance().getScaleY();
         var origin = cc.EGLView.getInstance().getViewPortRect();
         event.getLocation().x -= origin.origin.x;
@@ -59,7 +59,7 @@ var MyLayer = cc.Layer.extend({
         event.getLocation().x /= cc.Director.getInstance().getContentScaleFactor(); 
         event.getLocation().y /= cc.Director.getInstance().getContentScaleFactor();
         event.getLocation().x /= xScale;
-        event.getLocation().y /= yScale;
+        event.getLocation().y /= yScale;*/
         
         var touchLocation = this.convertToNodeSpace(event.getLocation());
         if (cc.rectContainsPoint(this.sortLabel.getBoundingBox(), touchLocation)) 
@@ -78,7 +78,7 @@ var MyLayer = cc.Layer.extend({
         if (touches.length <= 0)
              return;
 
-        var touch = touches[0];
+        /*var touch = touches[0];
         var xScale  = cc.EGLView.getInstance().getScaleX();
         var yScale = cc.EGLView.getInstance().getScaleY();
         var origin = cc.EGLView.getInstance().getViewPortRect();
@@ -87,7 +87,7 @@ var MyLayer = cc.Layer.extend({
         touch.getLocation().x /= cc.Director.getInstance().getContentScaleFactor();
         touch.getLocation().y /= cc.Director.getInstance().getContentScaleFactor();
         touch.getLocation().x /= xScale;
-        touch.getLocation().y /= yScale;
+        touch.getLocation().y /= yScale;*/
         
         var touchLocation = this.convertToNodeSpace(touch.getLocation());
         if (cc.rectContainsPoint(this.sortLabel.getBoundingBox(), touchLocation)) 

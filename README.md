@@ -1,6 +1,6 @@
 zSort_cocos2dx_html5
 ====================
-Demo: https://dl.dropboxusercontent.com/u/10581994/ZSortTest/index.html
+Demo: http://hsienwei.github.io/pages/skiprender/ZSortTest/
 
 Implement an algorithm of Z-Sort.
 Try cocos2d-x html5 library.
